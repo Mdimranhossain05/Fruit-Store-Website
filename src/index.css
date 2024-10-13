@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .img-shadow {
+        filter: drop-shadow(40px 50px 25px rgb(163, 25, 48));
+    }
+    .img-shadow2 {
+        filter: drop-shadow(10px 30px 15px #3030307a);
+    }
+    .input-style {
+        @apply px-4 py-2 border-[1px] border-gray-400 rounded-md
+    }
+    .primary-btn {
+        @apply bg-red-600 text-white px-5 py-1 rounded-md hover:bg-red-700 duration-200
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #dd617c;
+    border-radius: 5px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(92, 18, 18);
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3e3e;
+}
